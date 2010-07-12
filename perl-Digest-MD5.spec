@@ -1,5 +1,5 @@
 %define upstream_name    Digest-MD5
-%define upstream_version 2.39
+%define upstream_version 2.40
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
