@@ -1,9 +1,9 @@
 %define upstream_name    Digest-MD5
-%define upstream_version 2.51
+%define upstream_version 2.52
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    1
 
 Summary:     MD5 message digest algorithm
 License:    GPL+ or Artistic
@@ -58,3 +58,32 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sun May 29 2011 Funda Wang <fwang@mandriva.org> 2.510.0-2mdv2011.0
++ Revision: 681422
+- mass rebuild
+
+  + Guillaume Rousse <guillomovitch@mandriva.org>
+    - update to new version 2.51
+
+* Wed Jul 28 2010 Jérôme Quelin <jquelin@mandriva.org> 2.400.0-3mdv2011.0
++ Revision: 562421
+- rebuild
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 2.400.0-2mdv2011.0
++ Revision: 555796
+- rebuild for perl 5.12
+
+* Mon Jul 12 2010 Jérôme Quelin <jquelin@mandriva.org> 2.400.0-1mdv2011.0
++ Revision: 551219
+- update to 2.40
+
+* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 2.390.0-1mdv2010.0
++ Revision: 395357
+- import perl-Digest-MD5
+
+
+* Sun Jul 12 2009 cpan2dist 2.39-1mdv
+- initial mdv release, generated with cpan2dist
