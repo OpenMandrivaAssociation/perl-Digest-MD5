@@ -2,14 +2,14 @@
 %define upstream_version 2.53
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 2.53
+Version:    %perl_convert_version %{upstream_version}
 Release:    1
 
 Summary:     MD5 message digest algorithm
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Digest/Digest-MD5-2.53.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Digest/Digest-MD5-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Digest::base)
 BuildRequires: perl(File::Spec)
