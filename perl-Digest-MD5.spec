@@ -1,9 +1,9 @@
 %define upstream_name    Digest-MD5
-%define upstream_version 2.53
+%define upstream_version 2.55
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Release:    1
 
 Summary:     MD5 message digest algorithm
 License:    GPL+ or Artistic
