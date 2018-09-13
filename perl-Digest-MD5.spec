@@ -15,7 +15,6 @@ BuildRequires: perl(Digest::base)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(XSLoader)
 BuildRequires: perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The 'Digest::MD5' module allows you to use the RSA Data Security Inc. MD5
@@ -45,46 +44,9 @@ length and which can read files directly.
 %{make} test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
-
-
-%changelog
-* Sun May 29 2011 Funda Wang <fwang@mandriva.org> 2.510.0-2mdv2011.0
-+ Revision: 681422
-- mass rebuild
-
-  + Guillaume Rousse <guillomovitch@mandriva.org>
-    - update to new version 2.51
-
-* Wed Jul 28 2010 Jérôme Quelin <jquelin@mandriva.org> 2.400.0-3mdv2011.0
-+ Revision: 562421
-- rebuild
-
-* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 2.400.0-2mdv2011.0
-+ Revision: 555796
-- rebuild for perl 5.12
-
-* Mon Jul 12 2010 Jérôme Quelin <jquelin@mandriva.org> 2.400.0-1mdv2011.0
-+ Revision: 551219
-- update to 2.40
-
-* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 2.390.0-1mdv2010.0
-+ Revision: 395357
-- import perl-Digest-MD5
-
-
-* Sun Jul 12 2009 cpan2dist 2.39-1mdv
-- initial mdv release, generated with cpan2dist
-
