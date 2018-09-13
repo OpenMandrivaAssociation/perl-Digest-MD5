@@ -40,9 +40,6 @@ length and which can read files directly.
 
 %{make}
 
-%check
-%{make} test
-
 %install
 %makeinstall_std
 
