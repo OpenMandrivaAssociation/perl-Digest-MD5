@@ -46,4 +46,4 @@ length and which can read files directly.
 %files
 %doc Changes README
 %{_mandir}/man3/*
-%perl_vendorlib/*
+%perl_vendorarch/*
